@@ -2,6 +2,6 @@ html {
     background-color: #f1f5f9;
     font-family: sans-serif;
   }
-  @media screen and (min-width: 780px) {
-    font-size: 2rem;
+  @media (min-width: 780px) {
+    color: pink;
     }
