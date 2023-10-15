@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets';
+import imglogoides from '../assets/logo-ides.png';
+import imglogoifam from '../assets/logo-ifam-removebg-preview.png';
+---
+
+<div class="controle-carrosel">
+    <div class="carrosel">
+        <ul class="carrosel">
+            <li class="img if">
+                <div class="circulo">
+                    <!-- <Image className="w-10 h-2" src={imglogoifam} alt="Logo do IFAM."/> -->
+                </div>
+                
+            </li>
+            <li>IFAM</li>
+            <li class="img">
+                <div class="circulo">
+                    <!-- <Image src={imglogoides} alt="Logo do curso de desenvolvimento de sistemas."/> -->
+                </div>
+            </li>
+            <li>IDES</li>
+            <li>-</li>
+            <li>SNCT2023</li>
+        </ul>
+        <ul class="carrosel">
+            <li class="img if">
+                <div class="circulo">
+                    <!-- <Image className="w-10 h-2" src={imglogoifam} alt="Logo do IFAM."/> -->
+                </div>
+                
+            </li>
+            <li>IFAM</li>
+            <li class="img">
+                <div class="circulo">
+                    <!-- <Image src={imglogoides} alt="Logo do curso de desenvolvimento de sistemas."/> -->
+                </div>
+            </li>
+            <li>IDES</li>
+            <li>-</li>
+            <li>SNCT2023</li>
+        </ul>
+        <ul class="carrosel">
+            <li class="img if">
+                <div class="circulo">
+                    <!-- <Image className="w-10 h-2" src={imglogoifam} alt="Logo do IFAM."/> -->
+                </div>
+                
+            </li>
+            <li>IFAM</li>
+            <li class="img">
+                <div class="circulo">
+                    <!-- <Image src={imglogoides} alt="Logo do curso de desenvolvimento de sistemas."/> -->
+                </div>
+            </li>
+            <li>IDES</li>
+            <li>-</li>
+            <li>SNCT2023</li>
+        </ul>
+        <ul class="carrosel">
+            <li class="img if">
+                <div class="circulo">
+                    <!-- <Image className="w-10 h-2" src={imglogoifam} alt="Logo do IFAM."/> -->
+                </div>
+                
+            </li>
+            <li>IFAM</li>
+            <li class="img">
+                <div class="circulo">
+                    <!-- <Image src={imglogoides} alt="Logo do curso de desenvolvimento de sistemas."/> -->
+                </div>
+            </li>
+            <li>IDES</li>
+            <li>-</li>
+            <li>SNCT2023</li>
+        </ul>
+    </div>
+    
+</div>
+<style>
+img {
+    width: 50px;
+}
+.carrosel {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    animation: andar 18s infinite alternate-reverse;
+    color: aliceblue;
+    margin-left: 1rem;
+}
+
+.controle-carrosel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+}
+li{
+    padding-right: 10px;
+}
+.circulo{
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background-color: #ffff;
+    margin-right: 15px;
+    margin-top: 0.6rem;
+}
+
+@keyframes andar {
+    from {
+        transform: translateX(150px);
+    }
+    to {
+        transform: translateX(-200px);
+    }
+
+}
+</style>
