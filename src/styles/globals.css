@@ -40,7 +40,7 @@
 		.tema {
 			margin-top: 10rem;
 			font-size: 4rem;
-      padding-left: 2rem;
+      padding-left: 3rem;
 			
 		}
 		p {
@@ -54,6 +54,7 @@
       padding: 1rem 1rem 1rem 1rem;
       font-family: 'Anton', sans-serif;
       letter-spacing: 3px;
+      color: #4b4d72;
     }
 		
 	}
@@ -62,3 +63,77 @@
 			overflow: hidden;
 		}
 	}
+
+  .hamburguer {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburguer .linha {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #c8f181;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .links-nav {
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    background-color: #ff9776;
+    display: none;
+    margin: 0;
+  }
+  
+  .links-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .links-nav a:hover,
+  .links-nav a:focus {
+    background-color: #c8f181;
+  }
+  
+  .expandido {
+    display: unset;
+  }
+  
+  @media screen and (min-width: 636px) {
+    .links-nav {
+      margin-left: 5em;
+      display: block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+  
+    .links-nav a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+    .hamburguer {
+        display: none;
+      }
+  
+  }
+   /* .menu-topo{
+    
+  } */
+  .nomes{
+    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+
+  }
