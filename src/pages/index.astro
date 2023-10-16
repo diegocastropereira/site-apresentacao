@@ -1,20 +1,19 @@
 ---
 import Cabecalho from '/src/components/Cabecalho.astro';
 import '../styles/globals.css';
-import { Image } from 'astro:assets';
 import logosnct from '../assets/logo_snct_2023.png'
 
 ---
 <main>
 	
-	<Cabecalho></Cabecalho>
+	<Cabecalho/>
 	<h1 class="titulo">20° SEMANA NACIONAL DE</h1>
 	<h1 class="titulo description">CIÊNCIA E TECNOLOGIA</h1>
 	<div class="tema">
 		Ciências básicas no uso do desenvolvimento sustentável
 	</div>
 	<img src={logosnct.src} alt="Um pássaro sentando em um ninho de ovos.">
-	<button>
+	<button class="btn">
 		<a href="/home">ENTRAR!</a>
 	</button>
 </main>

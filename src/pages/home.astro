@@ -1,10 +1,69 @@
 ---
 import LayoutBase from "@/layouts/LayoutBase.astro";
-import '@/styles/globals.css';
+import "@/styles/globals.css";
+import setadireita from "../assets/seta-direita.png";
+import folhaexemplo from '../assets/folha-exemplo.jpg';
 ---
 
-        <LayoutBase>
-            <div class="card">
-                <p>OI</p>
-            </div>
-        </LayoutBase>
+<LayoutBase>
+    <div class="card">
+        <h1>Título do projeto</h1>
+        <div class="foto">
+            <img class="foto-folha" src={folhaexemplo.src} alt="" />
+        </div>
+        <button class="btn-projeto"
+                ><a href="/estufa"
+                    ><img class="foto-card"
+                        class="logoif"
+                        src={setadireita.src}
+                        alt="Seta apontando para a direita."
+                    /></a
+                ></button
+            >
+    </div>
+    <div class="card green">
+        <h1>Título do projeto</h1>
+        <div class="foto">
+            <img class="foto-folha" src={folhaexemplo.src} alt="" />
+        </div>
+        <button class="btn-projeto"
+                ><a href="/estufa"
+                    ><img class="foto-card"
+                        class="logoif"
+                        src={setadireita.src}
+                        alt="Seta apontando para a direita."
+                    /></a
+                ></button
+            >
+    </div>
+    <div class="card bronw">
+        <h1>Título do projeto</h1>
+        <div class="foto">
+            <img class="foto-folha" src={folhaexemplo.src} alt="" />
+        </div>
+        <button class="btn-projeto"
+                ><a href="/estufa"
+                    ><img class="foto-card"
+                        class="logoif"
+                        src={setadireita.src}
+                        alt="Seta apontando para a direita."
+                    /></a
+                ></button
+            >
+    </div>
+    <div class="card red">
+        <h1>Título do projeto</h1>
+        <div class="foto">
+            <img class="foto-folha" src={folhaexemplo.src} alt="" />
+        </div>
+        <button class="btn-projeto"
+                ><a href="/estufa"
+                    ><img class="foto-card"
+                        class="logoif"
+                        src={setadireita.src}
+                        alt="Seta apontando para a direita."
+                    /></a
+                ></button
+            >
+    </div>
+</LayoutBase>

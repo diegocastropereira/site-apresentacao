@@ -1,16 +1,23 @@
 ---
-import Hamburguer from './Hamburguer.astro';
-import Navegacao from './Navegacao.astro';
-
+import Hamburguer from "./Hamburguer.astro";
+import Navegacao from "./Navegacao.astro";
+import imglogoifam from "../assets/logo-ifam-removebg-preview.png";
 ---
+
 <header class="menu-topo">
+    <div class="titulo-1">
+        <img
+            class="logoif"
+            src={imglogoifam.src}
+            alt="Logo do IFAM"
+        />
         <div class="nomes">
-        <h1>SNCT2023</h1>
-        <h2>IFAM <i>Campus CPRF</i> - IDES31</h2>
+            <h1>SNCT2023</h1>
+            <h2>IFAM <i>Campus CPRF</i> - IDES31</h2>
+        </div>
     </div>
     <nav>
         <Hamburguer />
         <Navegacao />
     </nav>
-    
 </header>
