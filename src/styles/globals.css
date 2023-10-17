@@ -9,12 +9,6 @@ main {
 		align-items: center;
     background: linear-gradient(
       to right,
-      #051937,
-      #051f3b,
-      #05263e,
-      #052e42,
-      #053647,
-      #053d4b,
       #05454f,
       #054c52,
       #055356,
@@ -52,10 +46,7 @@ main {
       #05ebbb,
       #05ebbd,
       #05c892,
-      #058771,
-      #054c52,
-      #053647,
-      #051937
+      #058771
     );
     background-size: 6000% 100%;
     animation: gradientAnimation 50s linear infinite;
