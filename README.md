@@ -13,4 +13,8 @@ A SNCT é um evento de alcance nacional que visa a divulgação e criação de t
 O site vai ser o que é simples, denomidado de estático, será implementado em um biblioteca chamada Astro.
 
 ## Autores: 
-
+Ana Kelly - Design
+Diego Castro - Programador
+Eduardo Cavanche - Programador
+Paulo Victor - Programador
+Mylenna Carvalho - Redatora
