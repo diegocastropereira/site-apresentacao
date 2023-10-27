@@ -2,14 +2,17 @@
 import LayoutBase from "@/layouts/LayoutBase.astro";
 import "@/styles/globals.css";
 import setadireita from "../assets/seta.png";
-import folhaexemplo from '../assets/folha-exemplo.jpg';
+import estufa from '../assets/estufa.png'
+import robo from '../assets/robo.png'
+import programadores from '../assets/programador-removebg-preview.png'
+import ides from '../assets/ides.jpeg'
 ---
 
 <LayoutBase>
     <div class="card">
         <h1>Estufa Automática</h1>
         <div class="foto">
-            <img class="foto-folha" src={folhaexemplo.src} alt="" />
+            <img class="foto-folha" src={estufa.src} alt="" />
         </div>
         <button class="btn-projeto"
                 ><a href="/projeto-estufa"
@@ -24,7 +27,7 @@ import folhaexemplo from '../assets/folha-exemplo.jpg';
     <div class="card green">
         <h1>Robô de <i>Lego</i></h1>
         <div class="foto">
-            <img class="foto-folha" src={folhaexemplo.src} alt="" />
+            <img class="foto-folha" src={robo.src} alt="" />
         </div>
         <button class="btn-projeto"
                 ><a href="/projeto-robo"
@@ -39,10 +42,10 @@ import folhaexemplo from '../assets/folha-exemplo.jpg';
     <div class="card bronw">
         <h1>Turma IDES31</h1>
         <div class="foto">
-            <img class="foto-folha" src={folhaexemplo.src} alt="" />
+            <img class="foto-folha" src={ides.src} alt="" />
         </div>
         <button class="btn-projeto"
-                ><a href="/estufa"
+                ><a href="/turma"
                     ><img class="foto-card"
                         class="logoif"
                         src={setadireita.src}
@@ -54,7 +57,7 @@ import folhaexemplo from '../assets/folha-exemplo.jpg';
     <div class="card red">
         <h1>Programadores</h1>
         <div class="foto">
-            <img class="foto-folha" src={folhaexemplo.src} alt="" />
+            <img class="foto-folha" src={programadores.src} alt="" />
         </div>
         <button class="btn-projeto"
                 ><a href="/quem-somos"

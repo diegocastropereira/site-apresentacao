@@ -55,7 +55,8 @@ main {
     .foto{
       display: flex;
       align-items: center;
-      margin-left: 0.3rem;
+      justify-content: center;
+      /* margin-left: 0.3rem; */
     }
 		
 	}
@@ -143,7 +144,6 @@ main {
     margin: 2rem;
     color: #ffff;
     padding-top: 1rem;
-    padding-left: 2rem;
     padding-bottom: 1rem;
   }
   .logoif{
@@ -160,7 +160,7 @@ main {
 }
 .btn-projeto{
   background-color: inherit;
-  margin-left: 13rem;
+  margin-left: 16rem;
 }
 .foto-card{
   width: 40px;
@@ -238,4 +238,7 @@ main {
   width: 300px;
   border-radius: 3px;
   margin-bottom: 3rem;
+}
+h1{
+  padding-left: 2rem;
 }

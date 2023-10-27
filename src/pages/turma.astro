@@ -1,0 +1,34 @@
+---
+import LayoutBase from "@/layouts/LayoutBase.astro";
+import "@/styles/globals.css";
+import Rodape from "../components/Rodape.astro";
+import extaylor from "../assets/ta.jpg";
+import careca from "../assets/careca.jpeg";
+import dudu from "../assets/dudu.jpeg";
+import alunos from "../assets/alunos.jpeg";
+import lindos from "../assets/lindos.jpeg";
+import suli from "../assets/suli.jpeg";
+---
+
+<LayoutBase>
+    <div>
+        <h2 class="topico">Turma IDES31 - 2023</h2>
+        <div class="informacao">
+            <p class="info-texto">
+                Nossa jornada de aprendizado começou com a exploração das ciências básicas: matemática, biologia, química e física. Aprendemos que essas disciplinas servem como alicerce para compreender o mundo que nos cerca. 
+                Decidimos aplicar esse conhecimento de forma prática. Um dos projetos destacados foi a criação de uma estufa automatizada usando componentes reutilizados, demonstrando como a tecnologia pode impulsionar a agricultura sustentável. Outro projeto notável envolveu a construção de um robô de Lego equipado para detectar gases inflamáveis, ressaltando a importância da segurança ambiental.
+                À medida que o ano letivo se aproxima do fim, nossa turma está repleta de esperanças e sonhos para o futuro. Sabemos que as lições que aprendemos e as amizades que fizemos nos prepararam para enfrentar os desafios do mundo com determinação e otimismo.
+
+Nossa jornada de aprendizado foi uma experiência inesquecível, marcada por descobertas e crescimento. Continuaremos a aplicar nosso conhecimento e a trabalhar juntos para tornar o mundo um lugar melhor. O futuro é promissor para nossa turma exemplar, e estamos prontos para enfrentar qualquer desafio que surgir em nosso caminho.
+            </p>
+            <img class="info-img" src={alunos.src} alt="Logo do IFAM" />
+            <img class="info-img" src={careca.src} alt="Logo do IFAM" />
+            <img class="info-img" src={suli.src} alt="Logo do IFAM" />
+            <img class="info-img" src={lindos.src} alt="Logo do IFAM" />
+            <img class="info-img" src={dudu.src} alt="Logo do IFAM" />
+        </div>
+
+        
+    </div>
+</LayoutBase>
+<Rodape />

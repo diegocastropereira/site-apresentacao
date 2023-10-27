@@ -2,7 +2,11 @@
 import LayoutBase from "@/layouts/LayoutBase.astro";
 import "@/styles/globals.css";
 import Rodape from "../components/Rodape.astro";
-import extaylor from "../assets/ta.jpg";
+import estufa from "../assets/estufa.png";
+import prog1 from "../assets/programores-1.jpeg";
+import prog2 from "../assets/programadores-2.jpeg";
+import g1 from "../assets/estufa-geladeira.jpeg";
+import g2 from "../assets/foto-geladeira-2.jpeg";
 ---
 
 <LayoutBase>
@@ -11,77 +15,121 @@ import extaylor from "../assets/ta.jpg";
         <h2 class="topico">Como foi feito</h2>
         <div class="informacao">
             <p class="info-texto">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                rerum facilis est et expedita distinctio. Nam libero tempore,
-                cum soluta nobis est eligendi optio cumque nihil impedit quo
-                minus id quod maxime placeat facere possimus, omnis voluptas
-                assumenda est, omnis dolor repellendus. Temporibus autem
-                quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                eveniet ut et voluptates repudiandae sint et molestiae non
-                recusandae.
+                A estufa foi feita usando várias partes que iriam ser
+                descartadas, sua estrutura veio de uma geladeira cortada ao
+                meio, facilitando essa montagem, para fazer um visor
+                transparente foi feito um corte na porta da geladeira a inserido
+                uma placa de acrilico, toda as peças que controlam a parte
+                automática, o arduino por exemplo fica em uma caixa localizada
+                na parte de trás da estufa juntamente com o reservatório de
+                água.
             </p>
-            <img class="info-img" src={extaylor.src} alt="Logo do IFAM" />
+            <img class="info-img" src={estufa.src} alt="Imagem da estufa." />
         </div>
-        
+
         <h2 class="topico">Objetivo</h2>
         <div class="informacao">
             <p class="info-texto">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                rerum facilis est et expedita distinctio. Nam libero tempore,
-                cum soluta nobis est eligendi optio cumque nihil impedit quo
-                minus id quod maxime placeat facere possimus, omnis voluptas
-                assumenda est, omnis dolor repellendus. Temporibus autem
-                quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                eveniet ut et voluptates repudiandae sint et molestiae non
-                recusandae.
+                As principais funções estão entre, irrigação pré-programada,
+                monitoramento de temperatura, da umidade do solo e da quantidade
+                de água, entre seus principais usos estão entre, conseguir ter
+                um cultivo de plantas em lugares residenciais como apartamentos
+                e casas pequenas, plantar culturas em qualquer época do ano,
+                proporcionando um plantio de maior qualidade.
             </p>
-            <img class="info-img" src={extaylor.src} alt="Logo do IFAM" />
         </div>
 
         <h2 class="topico">Etapas de implementação</h2>
         <div class="informacao">
             <p class="info-texto">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                rerum facilis est et expedita distinctio. Nam libero tempore,
-                cum soluta nobis est eligendi optio cumque nihil impedit quo
-                minus id quod maxime placeat facere possimus, omnis voluptas
-                assumenda est, omnis dolor repellendus. Temporibus autem
-                quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                eveniet ut et voluptates repudiandae sint et molestiae non
-                recusandae.
+                Materiais Necessários:
+<br>
+Estrutura de geladeira ou material semelhante (como madeira, PVC, etc.) para a estrutura da estufa.
+Arduino ou microcontrolador compatível.
+Sensores de umidade do solo, temperatura e umidade (como o DHT11 ou DHT22).
+Sensor de distância ultrassônico (HC-SR04).
+Módulo de relé para controle de irrigação.
+Bomba de água para irrigação.
+Lâmpadas LED para iluminação.
+Protoboard, cabos jumper e resistores.
+Conexão Wi-Fi ou módulo Bluetooth (para comunicação com o site).
+Site ou aplicativo para monitoramento e controle remoto (pode ser desenvolvido em Flutterflow ou outra plataforma).
+<br>
+Passo 1: Montagem da Estrutura
+
+Se você estiver usando uma estrutura de geladeira, remova todas as partes internas, deixando apenas o esqueleto da geladeira.
+Se estiver usando outro material, construa a estrutura da estufa de acordo com suas dimensões desejadas, garantindo que haja espaço para os componentes internos.
+<br>
+Passo 2: Instalação dos Sensores
+
+Instale o sensor de umidade do solo no solo da estufa, de modo que a sonda esteja no solo da área de plantio.
+Monte o sensor de temperatura e umidade (DHT11 ou DHT22) em uma posição central dentro da estufa.
+Coloque o sensor de distância ultrassônico (HC-SR04) em uma posição elevada na estufa, apontando para as plantas.
+<br>
+Passo 3: Montagem dos Componentes Eletrônicos
+
+Conecte os sensores ao Arduino usando cabos jumper.
+Conecte o módulo de relé ao Arduino para controlar a bomba de água.
+Conecte as lâmpadas LED ao Arduino para fornecer iluminação.
+Certifique-se de que todos os componentes eletrônicos estejam alimentados corretamente e conectados ao Arduino.
+<br>
+Passo 4: Programação do Arduino
+
+Escreva um código Arduino que leia dados dos sensores, controle a bomba de água com base na umidade do solo e acenda as luzes de acordo com a necessidade.
+Configure a comunicação Wi-Fi ou Bluetooth para permitir o controle e monitoramento remoto.
+<br>
+Passo 5: Desenvolvimento do Site ou Aplicativo (Usando Flutterflow ou Outra Plataforma)
+
+Crie um site ou aplicativo para monitorar e controlar a estufa. Ele deve permitir que você visualize os dados dos sensores e acione a irrigação e a iluminação remotamente.
+Use módulos Bluetooth ou Wi-Fi no site/aplicativo para se comunicar com o Arduino na estufa.
+<br>
+Passo 6: Testes e Ajustes
+
+Realize testes para garantir que todos os componentes estejam funcionando corretamente.
+Ajuste as configurações do Arduino e do site/aplicativo conforme necessário para atender às necessidades da estufa e das plantas.
+<br>
+Passo 7: Monitoramento Contínuo
+
+Monitore regularmente os dados dos sensores e ajuste as configurações conforme necessário para manter as condições ideais na estufa.
+Aproveite a automação para economizar água e energia, garantindo um ambiente saudável para o crescimento das plantas.
             </p>
-            <img class="info-img" src={extaylor.src} alt="Logo do IFAM" />
+            <img class="info-img" src={g1.src} alt="Logo do IFAM" />
+            <img class="info-img" src={g2.src} alt="Logo do IFAM" />
         </div>
 
         <h2 class="topico">Colaboradores</h2>
         <div class="informacao">
             <p class="info-texto">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                rerum facilis est et expedita distinctio. Nam libero tempore,
-                cum soluta nobis est eligendi optio cumque nihil impedit quo
-                minus id quod maxime placeat facere possimus, omnis voluptas
-                assumenda est, omnis dolor repellendus. Temporibus autem
-                quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                eveniet ut et voluptates repudiandae sint et molestiae non
-                recusandae.
+                <strong>Montagem:</strong>
+                <ul>
+                    <li>Eduardo Cavanche</li>
+                    <li>Ana Kelly</li>
+                    <li>Jade Coimbra</li>
+                </ul>
+                 
+                 <br>
+                <strong>Programadores:</strong>
+                <ul>
+                    <li>Diego Castro</li>
+                    <li>Paulo Victor</li>
+                </ul>
+                <br>
+                <strong>Pesquisa:</strong>
+                <ul>
+                    <li>Roberta</li>
+                    <li>Silvio Antônio</li>
+                </ul>
+                 <br>
+                <strong>Desenvolvimento Tecnológico:</strong>
+                <ul>
+                    <li>Mylenna Carvalho</li>
+                    <li>Breno Soares</li>
+                    <li>João Marinho</li>
+                </ul>
+                 <br>
             </p>
-            <img class="info-img" src={extaylor.src} alt="Logo do IFAM" />
+            <img class="info-img" src={prog1.src} alt="Logo do IFAM" />
+            <img class="info-img" src={prog2.src} alt="Logo do IFAM" />
         </div>
     </div>
 </LayoutBase>
